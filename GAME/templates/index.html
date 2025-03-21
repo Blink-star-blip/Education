@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+</head>
+<body>
+
+    <h1>Выберите тему:</h1>
+    <button onclick="startGame('История')">📜 История</button>
+    <button onclick="startGame('Наука')">🔬 Наука</button>
+
+    <div id="question-container" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Следующий вопрос</button>
+    </div>
+
+    <script src="static/script.js"></script>
+
+</body>
+</html>
