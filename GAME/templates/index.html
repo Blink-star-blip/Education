@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>EduVision</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в EduVision! 🎓</h1>
+
+        <div id="topic-container">
+            <h2>Выберите тему:</h2>
+            <button class="btn" onclick="selectTopic('История')">📜 История</button>
+            <button class="btn" onclick="selectTopic('Наука')">🔬 Наука</button>
+        </div>
+
+        <div id="difficulty-container" class="hidden">
+            <h2>Выберите сложность:</h2>
+            <button class="btn" onclick="startGame('Лёгкий')">🟢 Лёгкий</button>
+            <button class="btn" onclick="startGame('Средний')">🟡 Средний</button>
+            <button class="btn" onclick="startGame('Сложный')">🔴 Сложный</button>
+        </div>
+
+        <div id="question-container" class="hidden">
+            <h2 id="question-text"></h2>
+            <div id="options"></div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h3>🏆 Очки: <span id="score">0</span></h3>
+            <button class="btn next-btn" onclick="nextQuestion()">Следующий вопрос</button>
+        </div>
+    </div>
+</body>
+</html>

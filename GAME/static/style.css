@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎮 Кнопки */
+.btn {
+    background: #ff6f61;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #ff3b30;
+    transform: scale(1.05);
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 100%;
+    background: #ffeb3b;
+    border-radius: 5px;
+    transition: width 1s linear;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.fade {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
